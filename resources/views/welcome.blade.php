@@ -61,6 +61,8 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            <livewire:styles>
         </style>
     </head>
     <body>
@@ -78,12 +80,11 @@
                     @endauth
                 </div>
             @endif
-
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
                 </div>
-
+@livewire('hello-world')
                 <div class="links">
                     <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
@@ -96,5 +97,6 @@
                 </div>
             </div>
         </div>
+        <livewire:scripts>
     </body>
 </html>
